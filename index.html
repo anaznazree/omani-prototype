@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Multaqa Al-Omani</title>
+
+  <script>
+    tailwind = {
+      config: {
+        theme: {
+          extend: {
+            colors: {
+              teal: { dark: '#134e4a', med: '#115e59', light: '#e6f5f3' },
+              gold: { DEFAULT: '#c8a415', matte: '#b8960f', light: '#f5f0dc' },
+              darkbg: '#0c3c38'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700;800&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="w-full min-h-screen">
+<!-- Header -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3"><span class="text-teal-dark font-bold text-sm">IIUM</span> <span class="text-xs text-gray-400">|</span> <span class="text-teal-dark font-bold text-sm">ORSC</span>
+    </div>
+    <div class="hidden md:flex gap-6"><a href="#home" class="nav-link text-teal-dark hover:text-gold text-sm font-medium transition" data-nav="home">Home</a> <a href="#schedule" class="nav-link text-teal-dark hover:text-gold text-sm font-medium transition" data-nav="schedule">Schedule</a> <a href="#contact" class="nav-link text-teal-dark hover:text-gold text-sm font-medium transition" data-nav="contact">Contact Us</a>
+    </div>
+    <div class="flex items-center gap-3"><button class="site-button px-4 py-2 rounded text-sm font-semibold" onclick="window.location.hash='#contact'">Register</button>
+    </div>
+   </div>
+  </nav><!-- PAGE 1: HOME -->
+  <section id="page-home" class="page active pt-14"><!-- Hero Banner -->
+   <div class="relative w-full" style="height: calc(75 * min(var(--vh, 1vh), 1vh));"><img src="assets/placeholder.svg" class="site-image absolute inset-0 w-full h-full object-cover" loading="lazy">
+    <div class="absolute inset-0 bg-teal-dark/55"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+     <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Al-Multaqa Al-Omani</h1>
+     <p class="text-lg md:text-xl mb-2">Connecting Oman and IIUM through knowledge, culture and collaboration</p>
+     <p class="text-sm md:text-base mb-8 max-w-xl opacity-90">Welcome to Al-Multaqa Al-Omani.</p><button class="site-button px-8 py-3 rounded-lg font-semibold text-lg" onclick="document.getElementById('section-about').scrollIntoView({behavior:'smooth'})">Discover More</button>
+    </div>
+   </div><!-- Organizers & Partners -->
+   <div class="max-w-4xl mx-auto -mt-10 relative z-10 px-4">
+    <div class="site-card rounded-xl p-6 shadow-xl border border-gold/30">
+     <p class="text-center font-semibold mb-2">Organised by</p>
+     <p class="text-center text-sm">In collaboration with strategic partners</p>
+     <div class="flex justify-center gap-8 mt-4 opacity-40">
+      <div class="w-12 h-12 rounded bg-gray-200"></div>
+      <div class="w-12 h-12 rounded bg-gray-200"></div>
+      <div class="w-12 h-12 rounded bg-gray-200"></div>
+     </div>
+    </div>
+   </div><!-- From the Chair -->
+   <div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center"><img src="assets/placeholder.svg" class="site-image w-full h-72 object-cover rounded-xl shadow-lg" loading="lazy">
+     <div>
+      <h2 class="text-2xl font-bold mb-4">From the Chair</h2>
+      <p class="text-base leading-relaxed mb-4">Welcome to Al-Multaqa Al-Omani. This prototype section is ready for your final approved message.</p>
+      <p class="font-semibold">Conference Chair</p>
+      <p class="text-sm opacity-70">Al-Multaqa Al-Omani</p>
+     </div>
+    </div>
+   </div><!-- About the Conference -->
+   <div id="section-about" class="site-section py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 class="text-3xl md:text-4xl font-bold mb-6">About the Conference</h2>
+     <p class="text-base md:text-lg leading-relaxed mb-6 max-w-3xl mx-auto">A platform for academic exchange, cultural engagement and meaningful collaboration.</p><span class="text-sm font-semibold cursor-pointer inline-flex items-center gap-1" onclick="window.location.hash='#contact'">Register your interest →</span>
+    </div>
+   </div><!-- Conference Pillars -->
+   <div class="py-16 px-4" style="background: linear-gradient(180deg, #f5f0dc 0%, #ffffff 100%);">
+    <div class="max-w-5xl mx-auto">
+     <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Conference Pillars</h2>
+     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div class="pillar-item flex flex-col items-center">
+       <div class="site-card w-20 h-28 rounded-lg shadow-md flex items-center justify-center mb-2"><i data-lucide="landmark" class="text-gold" style="width:28px;height:28px;"></i>
+       </div><span class="text-xs text-center font-medium">Heritage</span>
+      </div>
+      <div class="pillar-item flex flex-col items-center">
+       <div class="site-card w-20 h-28 rounded-lg shadow-md flex items-center justify-center mb-2"><i data-lucide="graduation-cap" class="text-gold" style="width:28px;height:28px;"></i>
+       </div><span class="text-xs text-center font-medium">Education</span>
+      </div>
+      <div class="pillar-item flex flex-col items-center">
+       <div class="site-card w-20 h-28 rounded-lg shadow-md flex items-center justify-center mb-2"><i data-lucide="users" class="text-gold" style="width:28px;height:28px;"></i>
+       </div><span class="text-xs text-center font-medium">Community</span>
+      </div>
+      <div class="pillar-item flex flex-col items-center">
+       <div class="site-card w-20 h-28 rounded-lg shadow-md flex items-center justify-center mb-2"><i data-lucide="trending-up" class="text-gold" style="width:28px;height:28px;"></i>
+       </div><span class="text-xs text-center font-medium">Innovation</span>
+      </div>
+      <div class="pillar-item flex flex-col items-center">
+       <div class="site-card w-20 h-28 rounded-lg shadow-md flex items-center justify-center mb-2"><i data-lucide="music" class="text-gold" style="width:28px;height:28px;"></i>
+       </div><span class="text-xs text-center font-medium">Culture</span>
+      </div>
+      <div class="pillar-item flex flex-col items-center">
+       <div class="site-card w-20 h-28 rounded-lg shadow-md flex items-center justify-center mb-2"><i data-lucide="globe" class="text-gold" style="width:28px;height:28px;"></i>
+       </div><span class="text-xs text-center font-medium">Global Exchange</span>
+      </div>
+     </div>
+    </div>
+   </div><!-- Cultural Initiatives -->
+   <div class="py-16 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+     <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Cultural Initiatives</h2>
+     <div class="space-y-6">
+      <div class="flex flex-col md:flex-row gap-5 items-center rounded-xl overflow-hidden shadow-md border border-gray-100"><img src="assets/placeholder.svg" class="site-image w-full md:w-48 h-40 object-cover" loading="lazy">
+       <div class="p-5 flex-1">
+        <h3 class="font-bold mb-2">Heritage & Cultural Exchange</h3>
+        <p class="text-sm mb-3">Explore Omani heritage and cultural connections.</p><button class="site-button px-4 py-2 rounded text-sm font-semibold">Learn More</button>
+       </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-5 items-center rounded-xl overflow-hidden shadow-md border border-gray-100"><img src="assets/placeholder.svg" class="site-image w-full md:w-48 h-40 object-cover" loading="lazy">
+       <div class="p-5 flex-1">
+        <h3 class="font-bold mb-2">Academic Collaboration</h3>
+        <p class="text-sm mb-3">Strengthening connections through education and research.</p><button class="site-button px-4 py-2 rounded text-sm font-semibold">Learn More</button>
+       </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-5 items-center rounded-xl overflow-hidden shadow-md border border-gray-100"><img src="assets/placeholder.svg" class="site-image w-full md:w-48 h-40 object-cover" loading="lazy">
+       <div class="p-5 flex-1">
+        <h3 class="font-bold mb-2">Youth & Community Engagement</h3>
+        <p class="text-sm mb-3">Creating opportunities for meaningful participation.</p><button class="site-button px-4 py-2 rounded text-sm font-semibold">Learn More</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div><!-- Key Speakers -->
+   <div class="py-16 px-4 bg-teal-light">
+    <div class="max-w-5xl mx-auto">
+     <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Key Speakers</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="text-center"><img src="assets/placeholder.svg" class="site-image w-32 h-32 rounded-full mx-auto object-cover shadow-lg mb-3" loading="lazy">
+       <p class="font-bold">Speaker 1</p>
+       <p class="text-sm opacity-70">To be confirmed</p>
+      </div>
+      <div class="text-center"><img src="assets/placeholder.svg" class="site-image w-32 h-32 rounded-full mx-auto object-cover shadow-lg mb-3" loading="lazy">
+       <p class="font-bold">Speaker 2</p>
+       <p class="text-sm opacity-70">To be confirmed</p>
+      </div>
+      <div class="text-center"><img src="assets/placeholder.svg" class="site-image w-32 h-32 rounded-full mx-auto object-cover shadow-lg mb-3" loading="lazy">
+       <p class="font-bold">Speaker 3</p>
+       <p class="text-sm opacity-70">To be confirmed</p>
+      </div>
+     </div>
+     <hr class="border-gold/30 mb-8">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-md md:max-w-lg mx-auto">
+      <div class="text-center"><img src="assets/placeholder.svg" class="site-image w-28 h-28 rounded-full mx-auto object-cover shadow-lg mb-3" loading="lazy">
+       <p class="font-bold">Speaker 4</p>
+       <p class="text-sm opacity-70">To be confirmed</p>
+      </div>
+      <div class="text-center"><img src="assets/placeholder.svg" class="site-image w-28 h-28 rounded-full mx-auto object-cover shadow-lg mb-3" loading="lazy">
+       <p class="font-bold">Speaker 5</p>
+       <p class="text-sm opacity-70">To be confirmed</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- PAGE 2: SCHEDULE -->
+  <section id="page-schedule" class="page pt-14">
+   <div class="py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Programme Schedule</h2><!-- Day Tabs -->
+    <div class="max-w-3xl mx-auto mb-10 overflow-x-auto">
+     <div class="flex gap-2 justify-center min-w-max"><button class="day-tab active px-4 py-2 rounded-lg text-sm font-medium border border-teal-dark/20" data-day="1">Day 1<br><span class="text-xs opacity-70">Mon</span></button> <button class="day-tab px-4 py-2 rounded-lg text-sm font-medium border border-teal-dark/20" data-day="2">Day 2<br><span class="text-xs opacity-70">Tue</span></button> <button class="day-tab px-4 py-2 rounded-lg text-sm font-medium border border-teal-dark/20" data-day="3">Day 3<br><span class="text-xs opacity-70">Wed</span></button> <button class="day-tab px-4 py-2 rounded-lg text-sm font-medium border border-teal-dark/20" data-day="4">Day 4<br><span class="text-xs opacity-70">Thu</span></button> <button class="day-tab px-4 py-2 rounded-lg text-sm font-medium border border-teal-dark/20" data-day="5">Day 5<br><span class="text-xs opacity-70">Fri</span></button> <button class="day-tab px-4 py-2 rounded-lg text-sm font-medium border border-teal-dark/20" data-day="6">Day 6<br><span class="text-xs opacity-70">Sat</span></button> <button class="day-tab px-4 py-2 rounded-lg text-sm font-medium border border-teal-dark/20" data-day="7">Day 7<br><span class="text-xs opacity-70">Sun</span></button>
+     </div>
+    </div><!-- Program Cards -->
+    <div class="max-w-4xl mx-auto space-y-6">
+     <div class="site-card rounded-xl p-6 shadow-md flex flex-col md:flex-row gap-5 items-start">
+      <div class="flex-shrink-0 w-14 h-14 rounded-full bg-teal-light flex items-center justify-center"><i data-lucide="ship" class="text-teal-dark" style="width:24px;height:24px;"></i>
+      </div>
+      <div class="flex-1">
+       <h3 class="font-bold mb-1">Opening Ceremony & Heritage Forum</h3>
+       <p class="text-xs mb-2">Day 1</p>
+       <p class="text-sm mb-3">Opening programme and heritage forum.</p><button class="site-button px-5 py-2 rounded-lg text-sm font-semibold" onclick="registerFor('Opening Ceremony &amp; Heritage Forum')">Register</button>
+      </div>
+     </div>
+     <div class="site-card rounded-xl p-6 shadow-md flex flex-col md:flex-row gap-5 items-start">
+      <div class="flex-shrink-0 w-14 h-14 rounded-full bg-teal-light flex items-center justify-center"><i data-lucide="book-open" class="text-teal-dark" style="width:24px;height:24px;"></i>
+      </div>
+      <div class="flex-1">
+       <h3 class="font-bold mb-1">Academic Excellence & Research Panels</h3>
+       <p class="text-xs mb-2">Day 2</p>
+       <p class="text-sm mb-3">Academic and research-focused sessions.</p><button class="site-button px-5 py-2 rounded-lg text-sm font-semibold" onclick="registerFor('Academic Excellence &amp; Research Panels')">Register</button>
+      </div>
+     </div>
+     <div class="site-card rounded-xl p-6 shadow-md flex flex-col md:flex-row gap-5 items-start">
+      <div class="flex-shrink-0 w-14 h-14 rounded-full bg-teal-light flex items-center justify-center"><i data-lucide="lightbulb" class="text-teal-dark" style="width:24px;height:24px;"></i>
+      </div>
+      <div class="flex-1">
+       <h3 class="font-bold mb-1">Youth Leadership & Entrepreneurship Workshop</h3>
+       <p class="text-xs mb-2">Day 3</p>
+       <p class="text-sm mb-3">Interactive workshop for youth leadership and entrepreneurship.</p><button class="site-button px-5 py-2 rounded-lg text-sm font-semibold" onclick="registerFor('Youth Leadership &amp; Entrepreneurship Workshop')">Register</button>
+      </div>
+     </div>
+     <div class="site-card rounded-xl p-6 shadow-md flex flex-col md:flex-row gap-5 items-start">
+      <div class="flex-shrink-0 w-14 h-14 rounded-full bg-teal-light flex items-center justify-center"><i data-lucide="music" class="text-teal-dark" style="width:24px;height:24px;"></i>
+      </div>
+      <div class="flex-1">
+       <h3 class="font-bold mb-1">Omani Cultural Evening: Music & Poetry</h3>
+       <p class="text-xs mb-2">Day 4</p>
+       <p class="text-sm mb-3">An evening celebrating Omani music, poetry and culture.</p><button class="site-button px-5 py-2 rounded-lg text-sm font-semibold" onclick="registerFor('Omani Cultural Evening: Music &amp; Poetry')">Register</button>
+      </div>
+     </div>
+     <div class="site-card rounded-xl p-6 shadow-md flex flex-col md:flex-row gap-5 items-start">
+      <div class="flex-shrink-0 w-14 h-14 rounded-full bg-teal-light flex items-center justify-center"><i data-lucide="globe" class="text-teal-dark" style="width:24px;height:24px;"></i>
+      </div>
+      <div class="flex-1">
+       <h3 class="font-bold mb-1">Closing Ceremony & Future Pathways</h3>
+       <p class="text-xs mb-2">Day 5</p>
+       <p class="text-sm mb-3">Closing reflections and future collaboration pathways.</p><button class="site-button px-5 py-2 rounded-lg text-sm font-semibold" onclick="registerFor('Closing Ceremony &amp; Future Pathways')">Register</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- PAGE 3: CONTACT -->
+  <section id="page-contact" class="page pt-14">
+   <div class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-10">Contact & Registration</h2>
+    <div class="grid md:grid-cols-5 gap-10"><!-- Form (60%) -->
+     <div class="md:col-span-3">
+      <div class="site-card p-6 rounded-xl shadow-lg">
+       <h3 class="font-bold mb-5">Register Your Interest</h3>
+       <form id="reg-form" class="space-y-4">
+        <div>
+         <label for="fname" class="block text-sm font-medium mb-1">Full Name</label><input id="fname" type="text" required class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-med focus:outline-none">
+        </div>
+        <div>
+         <label for="finst" class="block text-sm font-medium mb-1">Institution</label><input id="finst" type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-med focus:outline-none">
+        </div>
+        <div>
+         <label for="femail" class="block text-sm font-medium mb-1">Email</label><input id="femail" type="email" required class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-med focus:outline-none">
+        </div>
+        <div>
+         <label for="fphone" class="block text-sm font-medium mb-1">Phone Number</label><input id="fphone" type="tel" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-med focus:outline-none">
+        </div>
+        <div>
+         <label for="fprog" class="block text-sm font-medium mb-1">Programme</label><select id="fprog" required class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-med focus:outline-none"><option value="">Select a program</option><option>All Programs</option><option>Opening Ceremony &amp; Heritage Forum</option><option>Academic Excellence &amp; Research Panels</option><option>Youth Leadership &amp; Entrepreneurship Workshop</option><option>Omani Cultural Evening: Music &amp; Poetry</option><option>Closing Ceremony &amp; Future Pathways</option></select>
+        </div>
+        <div>
+         <label for="fmsg" class="block text-sm font-medium mb-1">Message</label><textarea id="fmsg" rows="3" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-teal-med focus:outline-none"></textarea>
+        </div><button type="submit" class="site-button w-full py-3 rounded-lg font-semibold text-base">Submit Registration</button>
+       </form>
+       <div id="form-success" class="hidden text-center py-8"><i data-lucide="check-circle" class="mx-auto text-teal-dark" style="width:48px;height:48px;"></i>
+        <p class="mt-3 font-medium">Thank you. Your registration has been recorded for this prototype.</p>
+       </div>
+      </div>
+     </div><!-- Info (40%) -->
+     <div class="md:col-span-2 space-y-6">
+      <div class="site-card p-6 rounded-xl shadow-lg">
+       <h3 class="font-bold mb-3">Person in Charge</h3>
+       <p class="font-semibold">To be confirmed</p>
+       <p class="text-sm opacity-70">Programme Secretariat</p>
+       <p class="text-sm mt-2">Email: to be confirmed</p>
+       <p class="text-sm">Phone: to be confirmed</p>
+      </div>
+      <div class="site-card p-6 rounded-xl shadow-lg">
+       <h3 class="font-bold mb-3">Location</h3>
+       <p class="text-sm mb-4">International Islamic University Malaysia (IIUM), Gombak</p>
+       <div class="rounded-lg overflow-hidden border border-gray-200 h-44 bg-gray-100 flex items-center justify-center">
+        <div class="text-center text-gray-400"><i data-lucide="map-pin" style="width:32px;height:32px;" class="mx-auto mb-2"></i>
+         <p class="text-sm">IIUM, Gombak, Kuala Lumpur</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="mt-auto">
+   <div class="site-section py-4"></div>
+   <div class="site-footer">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+     <div class="grid md:grid-cols-3 gap-6 text-sm">
+      <div>
+       <p class="font-bold mb-2">Al-Multaqa Al-Omani</p>
+       <div class="flex gap-3 mt-3"><i data-lucide="facebook" style="width:18px;height:18px;" class="text-gold opacity-80"></i> <i data-lucide="twitter" style="width:18px;height:18px;" class="text-gold opacity-80"></i> <i data-lucide="instagram" style="width:18px;height:18px;" class="text-gold opacity-80"></i> <i data-lucide="linkedin" style="width:18px;height:18px;" class="text-gold opacity-80"></i> <i data-lucide="youtube" style="width:18px;height:18px;" class="text-gold opacity-80"></i>
+       </div>
+      </div>
+      <div>
+       <p class="font-bold mb-2">Quick Links</p>
+       <div class="space-y-1"><a href="#home" class="block text-white/70 hover:text-gold text-sm">Home</a> <a href="#schedule" class="block text-white/70 hover:text-gold text-sm">Schedule</a> <a href="#contact" class="block text-white/70 hover:text-gold text-sm">Register</a>
+       </div>
+      </div>
+      <div>
+       <p class="font-bold mb-2">Contact</p>
+       <p class="opacity-80 text-sm">Phone: to be confirmed</p>
+       <p class="opacity-80 text-sm">Email: to be confirmed</p>
+       <p class="opacity-80 text-sm mt-1">IIUM, Gombak, Malaysia</p>
+      </div>
+     </div>
+     <p class="text-center mt-6 opacity-50 text-xs">© 2026 Al-Multaqa Al-Omani. Prototype website.</p>
+    </div>
+   </div>
+  </footer>
+  
+  
+  
+ 
+<script src="script.js"></script>
+</body>
+</html>

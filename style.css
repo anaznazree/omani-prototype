@@ -1,0 +1,63 @@
+:root {
+  --teal-dark: #134e4a;
+  --teal-med: #115e59;
+  --teal-light: #e6f5f3;
+  --gold: #c8a415;
+  --gold-matte: #b8960f;
+  --gold-light: #f5f0dc;
+  --darkbg: #0c3c38;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+
+body { font-family: 'Alegreya Sans', sans-serif; }
+        h1,h2,h3,h4,h5 { font-family: 'Alegreya', serif; }
+        .page { display: none; }
+        .page.active { display: block; }
+        .nav-link.active { color: #c8a415; }
+        .day-tab.active { background: #115e59; color: #fff; }
+        .pillar-item:nth-child(1) { transform: translateY(24px); }
+        .pillar-item:nth-child(2) { transform: translateY(8px); }
+        .pillar-item:nth-child(3) { transform: translateY(0); }
+        .pillar-item:nth-child(4) { transform: translateY(0); }
+        .pillar-item:nth-child(5) { transform: translateY(8px); }
+        .pillar-item:nth-child(6) { transform: translateY(24px); }
+
+.site-button {
+  background: var(--teal-med);
+  color: white;
+  transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+}
+.site-button:hover {
+  background: var(--teal-dark);
+  transform: translateY(-1px);
+}
+.site-card { background: #fff; }
+.site-section {
+  background: var(--teal-dark);
+  color: #fff;
+}
+.site-footer {
+  background: var(--darkbg);
+  color: #fff;
+}
+.site-image {
+  background: #e5e7eb;
+}
+
+/* Fallback utilities for Canva's custom Tailwind palette */
+.text-teal-dark { color: var(--teal-dark) !important; }
+.text-teal-med { color: var(--teal-med) !important; }
+.text-gold { color: var(--gold) !important; }
+.bg-teal-dark { background-color: var(--teal-dark) !important; }
+.bg-teal-med { background-color: var(--teal-med) !important; }
+.bg-teal-light { background-color: var(--teal-light) !important; }
+.bg-teal-dark\/55 { background-color: rgba(19,78,74,.55) !important; }
+.border-gold\/30 { border-color: rgba(200,164,21,.30) !important; }
+.border-teal-dark\/20 { border-color: rgba(19,78,74,.20) !important; }
+.hover\:text-gold:hover { color: var(--gold) !important; }
+
+@media (max-width: 767px) {
+  .pillar-item:nth-child(n) { transform: none; }
+}
